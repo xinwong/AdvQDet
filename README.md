@@ -56,12 +56,10 @@ cifar10/
 # Stateful Detection
    
 This project provides scripts for performing stateful detection. You can find all relevant scripts in the `main.sh` directory.
-
-*   **ACPT:**
     
-    ```bash
-    main.sh
-    ```
+```
+main.sh
+```
 
 # Acknowledgement
 
