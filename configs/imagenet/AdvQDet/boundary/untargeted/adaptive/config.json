@@ -1,0 +1,37 @@
+{
+  "model_config": {
+    "threshold": 0.9,
+    "add_cache_hit": true,
+    "reset_cache_on_hit": false,
+    "aggregation": "cosine",
+    "action": "rejection",
+    "state": {
+      "type": "AdvQDet",
+      "input_shape": [
+        3,
+        224,
+        224
+      ],
+      "salt": false
+    },
+    "architecture": "resnet152",
+    "dataset": "imagenet"
+  },
+  "attack_config": {
+    "attack": "Boundary",
+    "targeted": false,
+    "nb_classes": 1000,
+    "max_iter": 99999999,
+    "eps": 0.05,
+    "num_dirs": 100,
+    "max_num_dirs": 10000,
+    "budget": 100000,
+    "adaptive": {
+      "init_bypass_rejects": true,
+      "delta_adjust_rejected_predictions": true,
+      "eps_adjust_rejected_predictions": true,
+      "delta_extraction": true,
+      "eps_extraction": true
+    }
+  }
+}
