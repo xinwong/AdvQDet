@@ -41,24 +41,17 @@ cifar10/
 
 `cifar10.json`:  A JSON file mapping images to their corresponding labels. Example:
 
-    ```json
-    {
-        "imgs/0.png": 3,
-        "imgs/1.png": 8,
-        "imgs/2.png": 8,
-        ...
-    }
-    ```
+```
+{
+    "imgs/0.png": 3,
+    "imgs/1.png": 8,
+    "imgs/2.png": 8,
+    ...
+}
+```
 
-`cifar10_targeted.json`: A JSON file used for targeted attacks. It maps target labels to an initialization image for that label. Example:
+`cifar10_targeted.json`: A JSON file used for targeted attacks. It maps target labels to an initialization image for that label.
 
-    ```json
-    {
-      "3": ["imgs/0.png"],
-      "8": ["imgs/1.png"],
-      ...
-    }
-    ```
 
 # Stateful Detection
    
