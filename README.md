@@ -39,7 +39,7 @@ cifar10/
     - cifar10_targeted.json
 ```
 
-*   `cifar10.json`:  A JSON file mapping images to their corresponding labels. Example:
+`cifar10.json`:  A JSON file mapping images to their corresponding labels. Example:
 
     ```json
     {
@@ -50,7 +50,7 @@ cifar10/
     }
     ```
 
-*   `cifar10_targeted.json`: A JSON file used for targeted attacks. It maps target labels to an initialization image for that label. Example:
+`cifar10_targeted.json`: A JSON file used for targeted attacks. It maps target labels to an initialization image for that label. Example:
 
     ```json
     {
